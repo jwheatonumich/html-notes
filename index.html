@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--Sets type to HTML5>
+<html>
+    <head>
+	<style>
+  	h2{
+    	color: red;
+  	}
+	</style>
+        <!--#body links to whatever has "body" as an id-->
+        <p>Link to the <a href=#body>body</a>.</p>
+    </head>
+    
+    <body>
+	<h2>
+	<!--The style element sets the color of the heading-->
+	Red Heading
+	</h2>
+        <p><a href=#>Dead link</a></p>
+        
+        <p><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></p>
+            
+        <p  style="color: red;">
+          External link to <a target="_blank" href="http://google.com"> Google</a> for you to follow.
+            <!--target="_blank" opens the webpage in a new tab-->
+        </p>
+
+        <p>
+	<div>
+	<!--div creates a container around this list, but doesn't affect how it appears-->
+        <ul>
+            <li>apple</li>
+            <li>banana</li>
+        </ul>
+        </div>
+	</p>
+        
+        <p id="body">
+            Body text
+        </p>
+    	
+        <p>
+            <!--A form with various inputs-->
+            <form action="/submit-cat-photo">
+            <!--action defines where the data is sent-->
+                <input type="text" placeholder="cat photo URL" required>
+                <br>
+                <label for="indoor"><input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label>
+		<!--The 'checked' element sets this as the default selection-->
+                <label for="outdoor"><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>
+                <!--Name links the two radios together-->
+                <!--name and value are what get sent then the form is submit-->
+                <br>
+                <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality"> Loving</label>
+                <label for="lazy"><input id="lazy" value="lazy" type="checkbox" name="personality"> Lazy</label>
+                <label for="energetic"><input id="energetic" value="energetic" type="checkbox" name="personality"> Energetic</label>
+                <!--The for and id should match, but I think they are also optional?-->
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </p>
+        
+    </body>
+
+</html>
